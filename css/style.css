@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************** HEADER **************/
+
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+    text-align: center;
+    justify-content: space-between;
+    padding: .625rem 1.5rem;
+    top: 62.5rem;
+    z-index: 1;
+}
+
+.headerHome{
+    background-image: url('file:///Users/lucas/Desktop/proyecto-final/preentrega_1/assets/img/render_ppal.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    z-index: 0;
+    overflow: hidden;
+    }
+
+header h1{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    justify-content: left;
+    text-transform: uppercase;
+    word-spacing: .625rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5rem;
+    letter-spacing: .1875rem;
+    color: black;
+    z-index: 2;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: right;
+    top: 2rem;
+    right: 1.5625rem;
+    list-style: none;
+    gap: 3.125rem;
+    z-index: 2;
+}
+
+.navbar li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    color: black;
+}
+
+.navbar li a:visited{
+    color: black;
+}
+
+/************** MAIN **************/
+
+/********* index *********/
+main{
+    margin-bottom: 50px;
+}
+
+main h2{
+    position: absolute;
+    justify-content: left;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 3.125rem;
+    letter-spacing: .1875rem;
+    color: black;
+    padding-top: 6rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.containerImg{
+    display: grid;
+    width: 100%;
+    height: 31.25rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "project-1 project-2 project-3"
+    ;
+    margin: .625rem;
+    padding: .625rem; 
+    position: absolute; 
+    padding-top: 9rem;
+}
+
+.cards-1{
+    grid-area:project-1;
+}
+
+.cards-2{
+    grid-area:project-2;
+}
+
+.cards-3{
+    grid-area:project-3;
+}
+
+main section div p{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    color: black;
+}
+
+/********* design *********/
+.boxes{
+    display: grid;
+    width: 100%;
+    height: 31.25rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "design-1 design-2 design-3"
+    ;
+    margin: .625rem;
+    padding: .625rem; 
+    position: absolute; 
+    padding-top: 0;
+}
+
+.projects{
+    grid-area: design-1;
+    position: absolute; 
+    top: 10rem; 
+    left: .3125rem; 
+}
+
+.modelling{
+    grid-area: design-2;
+    position: absolute; 
+    top: 10rem; 
+    padding-left: 90px;
+}
+
+.rendering{
+    grid-area: design-3;
+    position: absolute; 
+    top: 10rem; 
+    padding-left: 30px;
+}
+
+main h3{
+    padding-left: 1.25rem;
+    padding-top: 14.0625rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+    color: black;
+}
+
+main h4{
+    padding-left: 1.25rem;
+    padding-top: 1.875rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .125rem;
+    color: black;
+}
+
+main h5{
+    padding-left: 1.25rem;
+    padding-top: 1.875rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .125rem;
+    color: black;
+}
+
+main h6{
+    padding-left: 56.25rem;
+    padding-top: 12.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.25rem;
+    letter-spacing: .125rem;
+    color: black;
+}
+
+/********* about *********/
+.containerAboutus{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 50rem; 
+    margin: 0;
+}
+
+/********* contactus *********/
+.team1{
+    padding-left: 75.625rem;
+    padding-top: 1.25rem;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1875rem;
+    color: black;
+}
+
+.team2{
+    padding-left: 75.625rem;
+    padding-top: 1.25rem;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1875rem;
+    color: black;
+}
+
+.team3{
+    padding-left: 75.625rem;
+    padding-top: 1.25rem;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1875rem;
+    color: black;
+}
+
+main div p{
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    color: black;
+}
+
+
+
+/************** FOOTER **************/
+
+footer{
+    position: absolute;
+    padding-top: 42.5rem;
+    width: 100%;
+    height: 300px;
+    min-height: 100vh;
+    margin-top: auto;
+}
+
+footer h3{
+    position: absolute;
+    padding-left: 1.25rem;
+    justify-content: left;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 3.125rem;
+    letter-spacing: .1875rem;
+    bottom: 250px;
+    color: black;
+}
+
+.footerInformation{
+    position: relative;
+    bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footerInformation li a{
+    padding-left: 1.25rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+    color: black;
+}
+
+.footerInformation :visited{
+    color: black;
+}
+
+footer h4{
+    position: relative;
+    bottom: 100px;
+    text-align: right;
+    right: 10px;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 3.125rem;
+    letter-spacing: .1875rem;
+    white-space: nowrap;
+    color: black;
+}
+
+.footerNewsletter{
+    position: absolute;
+    bottom: 50px;
+    text-align: right;
+    right: 10px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+    white-space: nowrap;
+    color: black;
+}
+
+/******** MEDIA QUERYS********/
+@media (min-width:1024px) and (max-width: 1684px){
+    header h1{
+        font-size: 3.5rem;
+        align-items: top;
+    }
+    .navbar{
+        top: 1rem;
+        gap: 3rem;
+    }
+    .navbar li a{
+        font-size: 1.25rem;
+    }
+    .containerImg{
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "project-1 project-2"
+    ;
+    }
+    .cards-3{
+        display: none;
+    }
+    main h2{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 1023px){
+    header h1{
+        font-size: 2.5rem;
+        align-items: top;
+    }
+    .navbar{
+        top: 12px;
+        gap: 2rem;
+    }
+    .navbar li a{
+        font-size: 1rem;
+    }
+    .containerImg{
+        justify-content: space-around;
+        grid-template-columns: 1fr;
+        grid-template-rows: (1fr 1fr 1fr);
+        grid-template-areas:
+        "project-1"
+        "project-2"
+        "project-3"
+        ;
+    }
+    main h2{
+        font-size: 1.5rem;
+    }
+    .boxes{
+        justify-content: space-around;
+        grid-template-columns: 1fr;
+        grid-template-rows: (1fr 1fr 1fr);
+        grid-template-areas:
+        "design-1"
+        "design-2"
+        "design-3"
+        ;
+    }
+    footer h3{
+        font-size: 2.5rem;
+    }
+    footer h4{
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+@media (min-width:425px) and (max-width: 767px){
+    header h1{
+        font-size: 1.5rem;
+        align-items: top;
+        justify-content: center;
+    }
+    .navbar{
+        top: 35px;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .navbar li a{
+        font-size: .75rem;
+        top: 4rem;
+    }
+    .containerImg{
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: (1fr 1fr 1fr);
+        grid-template-areas:
+        "project-1"
+        "project-2"
+        "project-3"
+        ;
+    }
+    main h2{
+        font-size: 1rem;
+    }
+    footer h3{
+        font-size: 1.5rem;
+    }
+    footer h4{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 424px){
+    header h1{
+        font-size: 1.2rem;
+        align-items: top;
+    }
+    .navbar{
+        top: 35px;
+        gap: 1rem;
+    }
+    .navbar li a{
+        font-size: .60rem;
+        top: 4rem;
+    }
+    main h2{
+        font-size: 1rem;
+    }
+    footer h3{
+        font-size: 1.2rem;
+    }
+    footer h4{
+        font-size: 1.2rem;
+    }
+}
